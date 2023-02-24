@@ -74,7 +74,7 @@ function ChatInput({ chatId }: Props) {
   };
 
   return (
-    <div>
+    <div className="sticky bottom-0">
       <form
         onSubmit={sendMessage}
         className="stretch mx-2 flex flex-row gap-3 pt-2 last:mb-2 md:last:mb-6 lg:mx-auto lg:max-w-3xl lg:pt-6"

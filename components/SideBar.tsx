@@ -56,13 +56,13 @@ const SideBar = () => {
         <p className="flex-1">Dark mode</p>
       </div> */}
 
-      <button
+      <div
         onClick={() => window.open("https://github.com.levyloiseau")}
         className="chatRow flex truncate"
       >
         <ArrowTopRightOnSquareIcon className="h-5 w-5" />
         <p className="flex-1">Github</p>
-      </button>
+      </div>
 
       <div className="flex">
         {session && (

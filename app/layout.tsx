@@ -31,7 +31,7 @@ export default async function RootLayout({
                   {children}
                 </div>
               </div>
-              <div className="hidden bg-gpt-dark md:fixed md:inset-y-0 md:flex md:w-[260px] md:flex-col">
+              <div className="hidden h-screen bg-gpt-dark md:fixed md:inset-y-0 md:flex md:w-[260px] md:flex-col">
                 <SideBar />
                 {/* <SideNavBar /> */}
               </div>
