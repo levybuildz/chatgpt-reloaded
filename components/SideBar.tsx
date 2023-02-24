@@ -28,7 +28,7 @@ const SideBar = () => {
   );
 
   return (
-    <nav className="p-2 flex flex-col h-screen">
+    <div className="p-2 flex flex-col h-screen">
       <div className="flex-1">
         <div>
           <NewChat />
@@ -48,34 +48,29 @@ const SideBar = () => {
               <ChatRow key={chat.id} id={chat.id} />
             ))}
           </div>
+
+          <div
+            onClick={() => window.open("https://github.com/levyloiseau")}
+            className="chatRow flex truncate"
+          >
+            <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+            <p className="flex-1">Github</p>
+          </div>
+
+          <div className="flex">
+            {session && (
+              <div
+                onClick={() => signOut()}
+                className="chatRow flex-1 inline-flex truncate"
+              >
+                <ArrowRightOnRectangleIcon className="h-5 w-5" />
+                <p className="flex-1">Logout</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
-
-      {/* <div onClick={() => signOut()} className="chatRow flex truncate">
-        <MoonIcon className="h-5 w-5" />
-        <p className="flex-1">Dark mode</p>
-      </div> */}
-
-      <div
-        onClick={() => window.open("https://github.com.levyloiseau")}
-        className="chatRow flex truncate"
-      >
-        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-        <p className="flex-1">Github</p>
-      </div>
-
-      <div className="flex">
-        {session && (
-          <div
-            onClick={() => signOut()}
-            className="chatRow flex-1 inline-flex truncate"
-          >
-            <ArrowRightOnRectangleIcon className="h-5 w-5" />
-            <p className="flex-1">Logout</p>
-          </div>
-        )}
-      </div>
-    </nav>
+    </div>
   );
 };
 
