@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .infoText {
+    @apply w-full bg-gpt-white-2 dark:bg-gpt-gray-3 p-3 rounded-md;
+  }
+
+  .infoButtonText {
+    @apply w-full bg-gpt-white-2 dark:bg-gpt-gray-3 p-3 rounded-md hover:bg-gpt-white-hover dark:hover:bg-gpt-dark;
+  }
+
+  .chatRow {
+    @apply hover:bg-[#FFFFFF19] space-x-2 flex items-center justify-center px-3 py-3 rounded-lg transition duration-200 ease-in-out cursor-pointer text-gpt-white-1;
+  }
+
+  .backdrop {
+    @apply md:hidden z-40 fixed inset-0 bg-gpt-gray-3 bg-opacity-75 opacity-100 hidden;
+  }
+}
