@@ -39,7 +39,7 @@ function MobileNav() {
         className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md focus:outline-none hover:text-white"
         onClick={toggleSidebar}
       >
-        <Bars3Icon />
+        <Bars3Icon className="h-5 w-5" />
       </button>
       <h1 className="flex-1 text-center text-base font-normal">
         ChatGPT Reloaded
@@ -49,7 +49,7 @@ function MobileNav() {
         className="-ml-0.5 -mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-md focus:outline-none hover:text-white"
         onClick={createNewChat}
       >
-        <PlusIcon />
+        <PlusIcon className="h-5 w-5" />
       </button>
       {showSidebar && <MobileSideBar closeSidebar={closeSidebar} />}
     </div>
