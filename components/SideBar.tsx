@@ -51,15 +51,18 @@ const SideBar = () => {
         </div>
       </div>
 
-      <div onClick={() => signOut()} className="chatRow flex truncate">
+      {/* <div onClick={() => signOut()} className="chatRow flex truncate">
         <MoonIcon className="h-5 w-5" />
         <p className="flex-1">Dark mode</p>
-      </div>
+      </div> */}
 
-      <div onClick={() => signOut()} className="chatRow flex truncate">
+      <button
+        onClick={() => window.open("https://github.com.levyloiseau")}
+        className="chatRow flex truncate"
+      >
         <ArrowTopRightOnSquareIcon className="h-5 w-5" />
         <p className="flex-1">Github</p>
-      </div>
+      </button>
 
       <div className="flex">
         {session && (

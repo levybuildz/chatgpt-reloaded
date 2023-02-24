@@ -16,7 +16,7 @@ const MobileSideBar = ({ closeSidebar }: Props) => {
             className="ml-1 flex h-10 w-10 items-center justify-center focus:outline-none"
             onClick={closeSidebar}
           >
-            <XMarkIcon />
+            <XMarkIcon className="h-5 w-5" />
           </button>
         </div>
         <SideBar />
